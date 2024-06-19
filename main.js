@@ -10,7 +10,7 @@ $(document).ready(function(){
 
     $('form').on('submit', function(e) {
         e.preventDefault();
-        const enderecoDaNovaImagem = $('#endereco-imagem-nova').val();
+        const enderecoDaNovaImagem = $('#inserir-imagem-nova').val();
         const novoItem = $('<li style="display: none"></li>');
         $(`<img src="${enderecoDaNovaImagem}" />`).appendTo(novoItem);
         $(`
@@ -22,7 +22,7 @@ $(document).ready(function(){
         `).appendTo(novoItem);
         $(novoItem).appendTo('ul');
         $(novoItem).fadeIn(1000);
-        $('#endereco-imagem-nova').val('')
+        $('#inserir-imagem-nova').val('')
     })
 
 });
